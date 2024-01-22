@@ -116,7 +116,7 @@ class SerialApp:
             self.log_text.insert(tk.END, data +'\n')
             self.log_text.see(tk.END)  # 스크롤을 최신 데이터 위치로 이동
             self.log_text.config(state=tk.DISABLED)
-        self.parent.after(10, self.update_ui)  # 100ms 후에 다시 실행
+        self.parent.after(10, self.update_ui)  # 10ms 후에 다시 실행
 
     def search_ports(self): 
         # 사용 가능한 시리얼 포트를 검색하고 목록을 업데이트합니다.
@@ -275,12 +275,3 @@ def add_tab():
     SerialApp(new_tab_frame)
     # Notebook에 새 탭 추가
     notebook.add(new_tab_frame, text=f"Serial App {notebook.index('end')+1}")
-
-
-
-class NewApp:
-    # 새로운 앱 클래스 정의
-    def __init__(self, frame):
-        # NewApp의 UI 구성
-        # ...
-        pass

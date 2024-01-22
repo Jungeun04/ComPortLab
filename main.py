@@ -1,4 +1,5 @@
-#Serial Class 정리
+#!/usr/bin/env python
+# 리눅스에서 실행시 대비 Shebang
 
 import tkinter as tk
 from tkinter import ttk
