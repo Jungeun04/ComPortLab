@@ -3,7 +3,8 @@
 /dist
 
 weather_app.py
-test.py
+test_main.py
+test_serial_app.py
 main.spec
 error_log.txt
  
